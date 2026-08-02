@@ -1,0 +1,287 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #005f73;
+    --accent1-color: #001219;
+    --accent2-color: #94d2bd;
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --white: #ffffff;
+    --border-color: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,95,115,.9);
+    color: white;
+    padding: 1rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(148,210,189,.95);
+    padding: 1rem;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    margin-left: 1rem;
+}
+
+/* History */
+
+.history {
+    padding: 2rem 0;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history p {
+    text-align: justify;
+}
+
+/* Adventures */
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.adventures h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.adventures figure {
+    width: 250px;
+}
+
+.adventures img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Contact Information and Map */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 2rem auto;
+    align-items: stretch;
+}
+
+/* Company Information Box */
+
+.contact-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact-info h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+/* Map Box */
+
+.map {
+    height: 400px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #0a9396;
+}
+
+/* Employees */
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.employees h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.employees figure {
+    margin: 0;
+}
+
+.employees img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.employees figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
